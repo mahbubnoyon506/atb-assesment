@@ -4,8 +4,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Atb App",
-  description: "Assesment for atb",
+  title: "Atb Job Platform",
+  description: "Job Platform For Employer",
 };
 
 export default function RootLayout({ children }) {
