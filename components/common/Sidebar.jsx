@@ -1,9 +1,9 @@
 "use client";
 
-import React, { useEffect, useRef, useState } from "react";
-import { usePathname } from "next/navigation";
+import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+
 import { MdOutlineDashboard } from "react-icons/md";
 import { RiExpandLeftLine } from "react-icons/ri";
 

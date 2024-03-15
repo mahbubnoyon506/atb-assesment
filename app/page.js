@@ -1,9 +1,10 @@
+import Image from "next/image";
+
 import { FaPlayCircle } from "react-icons/fa";
 
 import Button from "@/components/shared/Button";
 import DefaultLayout from "@/components/DefaultLayout";
 import InputField from "@/components/forms/InputField";
-import Image from "next/image";
 
 
 export default function Home() {

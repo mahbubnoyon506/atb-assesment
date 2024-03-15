@@ -1,11 +1,13 @@
 "use client";
 
 import React from "react";
-import { useForm } from "react-hook-form";
-import InputField from "@/components/forms/InputField";
-import Button from "@/components/shared/Button";
 import Link from "next/link";
+
+import { useForm } from "react-hook-form";
+
+import Button from "@/components/shared/Button";
 import DefaultLayout from "@/components/DefaultLayout";
+import InputField from "@/components/forms/InputField";
 
 function Register() {
   const {

@@ -1,10 +1,11 @@
 import Link from "next/link";
-
 import Image from "next/image";
+
+import { FaSearch } from "react-icons/fa";
+
 import DropdownNotification from "./DropdownNotification";
 import DropdownMessage from "./DropdownMessage";
 import DropdownUser from "./DropdownUser";
-import { FaSearch } from "react-icons/fa";
 
 const DashboardHeader = (props) => {
   return (

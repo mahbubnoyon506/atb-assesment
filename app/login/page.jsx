@@ -1,11 +1,13 @@
 "use client";
 
+import Link from "next/link";
+import React from "react";
+
+import { useForm } from "react-hook-form";
+
 import DefaultLayout from "@/components/DefaultLayout";
 import InputField from "@/components/forms/InputField";
 import Button from "@/components/shared/Button";
-import Link from "next/link";
-import React from "react";
-import { useForm } from "react-hook-form";
 
 function Login() {
   const {

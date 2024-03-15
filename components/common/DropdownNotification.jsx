@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
+
 import { FaRegBell } from "react-icons/fa";
 
 const DropdownNotification = () => {

@@ -1,6 +1,6 @@
-import Button from "@/components/shared/Button";
-import Image from "next/image";
 import React from "react";
+import Image from "next/image";
+
 import { BsThreeDotsVertical } from "react-icons/bs";
 import {
   FaCheckCircle,
@@ -11,6 +11,8 @@ import {
 import { IoIosPersonAdd } from "react-icons/io";
 import { RiMessage2Fill } from "react-icons/ri";
 import { AiFillTwitterCircle } from "react-icons/ai";
+
+import Button from "@/components/shared/Button";
 import DefaultLayout from "@/components/DefaultLayout";
 
 function Profile() {
