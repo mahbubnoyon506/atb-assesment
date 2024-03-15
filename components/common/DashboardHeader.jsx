@@ -4,7 +4,6 @@ import Image from "next/image";
 import DropdownNotification from "./DropdownNotification";
 import DropdownMessage from "./DropdownMessage";
 import DropdownUser from "./DropdownUser";
-import { RiExpandLeftLine } from "react-icons/ri";
 
 const DashboardHeader = (props) => {
   return (
