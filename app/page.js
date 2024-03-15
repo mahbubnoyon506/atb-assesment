@@ -21,24 +21,24 @@ export default function Home() {
                 <div className="flex items-center space-x-4">
                   <div className="w-1/2">
                     <label htmlFor="keyword" className="block text-sm font-medium text-gray-700">What</label>
-                    <InputField id="keyword" className="mt-1 focus:ring-sky-500 focus:border-sky-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" type="text" placeholder="What jobs you want?" />
+                    <InputField id="keyword" className="w-full" type="text" placeholder="What jobs you want?" />
                   </div>
                   <div className="w-1/2">
                     <label htmlFor="location" className="block text-sm font-medium text-gray-700">Where</label>
-                    <InputField id="location" className="mt-1 focus:ring-sky-500 focus:border-sky-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" type="text" placeholder="Location" />
+                    <InputField id="location" className="w-full sm:text-sm" type="text" placeholder="Location" />
                   </div>
                 </div>
                 <div>
-                  <Button variant="sky" className="w-full bg-sky-600 text-white py-2 px-4 rounded-md hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-500">Search</Button>
+                  <Button variant="sky" extraClassName="w-full text-center flex justify-center">Search</Button>
                 </div>
               </form>
               <div className="mt-4 flex items-center gap-2 space-y-2">
                 <p className="text-sm font-medium text-gray-700">Popular Keywords:</p>
                 <ul className="flex flex-wrap gap-2">
-                  <li className="outline outline-1 outline-slate-300 p-1 "><a href="#" className="text-sky-600 hover:text-sky-500">Administrative</a></li>
-                  <li className="outline outline-1 outline-slate-300 p-1 "><a href="#" className="text-sky-600 hover:text-sky-500">Android</a></li>
-                  <li className="outline outline-1 outline-slate-300 p-1 "><a href="#" className="text-sky-600 hover:text-sky-500">app</a></li>
-                  <li className="outline outline-1 outline-slate-300 p-1 "><a href="#" className="text-sky-600 hover:text-sky-500">ASP.NET</a></li>
+                  <li className="outline outline-1 outline-slate-300 p-1 "><a href="#" className="text-blue-600 hover:text-blue-500">Administrative</a></li>
+                  <li className="outline outline-1 outline-slate-300 p-1 "><a href="#" className="text-blue-600 hover:text-blue-500">Android</a></li>
+                  <li className="outline outline-1 outline-slate-300 p-1 "><a href="#" className="text-blue-600 hover:text-blue-500">app</a></li>
+                  <li className="outline outline-1 outline-slate-300 p-1 "><a href="#" className="text-blue-600 hover:text-blue-500">ASP.NET</a></li>
                 </ul>
               </div>
             </div>
@@ -50,7 +50,7 @@ export default function Home() {
               <Image width={500} height={500} src="/images/hero-image.png" alt="Hero Image" className="w-full rounded-lg" />
               <div className="absolute inset-0 flex justify-center items-center">
                 <FaPlayCircle className="absolute text-white cursor-pointer" size={50} />
-                <div className="w-24 h-24 bg-sky-600 opacity-25 animate-ping rounded-full"></div>
+                <div className="w-24 h-24 bg-blue-600 opacity-25 animate-ping rounded-full"></div>
               </div>
             </div>
           </div>

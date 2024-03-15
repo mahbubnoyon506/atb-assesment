@@ -35,15 +35,15 @@ const DropdownMessage = () => {
           setNotifying(false);
           setDropdownOpen(!dropdownOpen);
         }}
-        className="relative flex h-8.5 w-8.5 items-center justify-center rounded-full border-[0.5px] border-stroke bg-gray hover:text-primary   "
+        className="relative flex h-8.5 w-8.5 items-center justify-center rounded-full border-[0.5px] border-[#E2E8F0] bg-[#EFF4FB] hover:text-[#3C50E0]   "
         href="#"
       >
         <span
-          className={`absolute -right-0.5 -top-0.5 z-1 h-2 w-2 rounded-full bg-meta-1 ${
+          className={`absolute -right-0.5 -top-0.5 z-1 h-2 w-2 rounded-full bg-[#DC3545] ${
             notifying === false ? "hidden" : "inline"
           }`}
         >
-          <span className="absolute -z-1 inline-flex h-full w-full animate-ping rounded-full bg-meta-1 opacity-75"></span>
+          <span className="absolute -z-1 inline-flex h-full w-full animate-ping rounded-full bg-[#DC3545] opacity-75"></span>
         </span>
         <AiOutlineMessage className="fill-current duration-300 ease-in-out" />
       </Link>
@@ -53,7 +53,7 @@ const DropdownMessage = () => {
         ref={dropdown}
         onFocus={() => setDropdownOpen(true)}
         onBlur={() => setDropdownOpen(false)}
-        className={`absolute -right-16 mt-2.5 flex h-90 w-75 flex-col rounded-sm border border-stroke bg-white shadow   sm:right-0 sm:w-80 ${
+        className={`absolute -right-16 mt-2.5 flex h-90 w-75 flex-col rounded-sm border border-[#E2E8F0] bg-white shadow   sm:right-0 sm:w-80 ${
           dropdownOpen === true ? "block" : "hidden"
         }`}
       >
@@ -65,7 +65,7 @@ const DropdownMessage = () => {
           {messages.map((message) => (
             <li key={""}>
               <Link
-                className="flex gap-4.5 border-t border-stroke px-4.5 py-3 hover:bg-gray-2  "
+                className="flex gap-4.5 border-t border-[#E2E8F0] px-4.5 py-3 hover:bg-[#F7F9FC]  "
                 href="#"
               >
                 <div className="h-12.5 w-12.5 rounded-full">

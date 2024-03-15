@@ -66,11 +66,11 @@ const ChartTwo = () => {
   const [state, setState] = useState({
     series: [
       {
-        name: "Sales",
+        name: "Candidate",
         data: [44, 55, 41, 67, 22, 43, 65],
       },
       {
-        name: "Revenue",
+        name: "Participated",
         data: [13, 23, 20, 8, 13, 27, 15],
       },
     ],
@@ -84,7 +84,7 @@ const ChartTwo = () => {
   handleReset;
 
   return (
-    <div className="col-span-12 rounded-sm border border-stroke bg-white p-7.5 shadow   xl:col-span-4">
+    <div className="col-span-12 rounded-sm border border-[#E2E8F0] bg-white p-7.5 shadow   xl:col-span-4">
       <div className="mb-4 justify-between gap-4 sm:flex">
         <div>
           <h4 className="text-xl font-semibold text-black ">

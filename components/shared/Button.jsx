@@ -6,7 +6,7 @@ const defaultStyling =
 const defaultWhite = " border-gray-300 bg-white text-gray-700 hover:bg-gray-50";
 
 const variants = {
-  sky: " border-transparent bg-sky-600 text-white hover:bg-sky-700 focus:ring-sky-600",
+  sky: " border-transparent bg-blue-700 text-white hover:bg-sky-700 focus:ring-blue-700",
   light: defaultWhite,
   white: defaultWhite,
   "success-outline": "border-teal-400 text-teal-700 bg-white hover:bg-teal-50",

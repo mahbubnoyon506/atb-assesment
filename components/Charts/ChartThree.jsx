@@ -59,10 +59,10 @@ const ChartThree = () => {
   handleReset;
 
   return (
-    <div className="col-span-12 rounded-sm border border-stroke bg-white px-5 pb-5 pt-7.5 shadow   sm:px-7.5 xl:col-span-5">
+    <div className="col-span-12 rounded-sm border border-[#E2E8F0] bg-white px-5 pb-5 pt-7.5 shadow   sm:px-7.5 xl:col-span-5">
       <div className="mb-3 justify-between gap-4 sm:flex">
         <div>
-          <h5 className="text-xl font-semibold text-black ">
+          <h5 className="text-xl font-semibold text-[#1C2434] ">
             Visitors Analytics
           </h5>
         </div>
@@ -117,8 +117,8 @@ const ChartThree = () => {
       <div className="-mx-8 flex flex-wrap items-center justify-center gap-y-3">
         <div className="w-full px-8 sm:w-1/2">
           <div className="flex w-full items-center">
-            <span className="mr-2 block h-3 w-full max-w-3 rounded-full bg-primary"></span>
-            <p className="flex w-full justify-between text-sm font-medium text-black ">
+            <span className="mr-2 block h-3 w-full max-w-3 rounded-full bg-[#3C50E0]"></span>
+            <p className="flex w-full justify-between text-sm font-medium text-[#1C2434] ">
               <span> Desktop </span>
               <span> 65% </span>
             </p>
@@ -127,7 +127,7 @@ const ChartThree = () => {
         <div className="w-full px-8 sm:w-1/2">
           <div className="flex w-full items-center">
             <span className="mr-2 block h-3 w-full max-w-3 rounded-full bg-[#6577F3]"></span>
-            <p className="flex w-full justify-between text-sm font-medium text-black ">
+            <p className="flex w-full justify-between text-sm font-medium text-[#1C2434] ">
               <span> Tablet </span>
               <span> 34% </span>
             </p>
@@ -136,7 +136,7 @@ const ChartThree = () => {
         <div className="w-full px-8 sm:w-1/2">
           <div className="flex w-full items-center">
             <span className="mr-2 block h-3 w-full max-w-3 rounded-full bg-[#8FD0EF]"></span>
-            <p className="flex w-full justify-between text-sm font-medium text-black ">
+            <p className="flex w-full justify-between text-sm font-medium text-[#1C2434] ">
               <span> Mobile </span>
               <span> 45% </span>
             </p>
@@ -145,7 +145,7 @@ const ChartThree = () => {
         <div className="w-full px-8 sm:w-1/2">
           <div className="flex w-full items-center">
             <span className="mr-2 block h-3 w-full max-w-3 rounded-full bg-[#0FADCF]"></span>
-            <p className="flex w-full justify-between text-sm font-medium text-black ">
+            <p className="flex w-full justify-between text-sm font-medium text-[#1C2434] ">
               <span> Unknown </span>
               <span> 12% </span>
             </p>
