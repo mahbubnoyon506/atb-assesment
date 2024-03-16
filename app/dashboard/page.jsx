@@ -40,7 +40,6 @@ function dashboard() {
         <ChartOne />
         <ChartTwo />
         <ChartThree />
-        {/* <MapOne /> */}
       </div>
     </DashboardLayout>
   );

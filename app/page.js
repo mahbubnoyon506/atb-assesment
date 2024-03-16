@@ -7,7 +7,6 @@ import Button from "@/components/shared/Button";
 import DefaultLayout from "@/components/DefaultLayout";
 import InputField from "@/components/forms/InputField";
 
-
 export default function Home() {
 
   return (

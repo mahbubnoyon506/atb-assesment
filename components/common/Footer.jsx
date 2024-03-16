@@ -8,6 +8,8 @@ import {
 } from "react-icons/fa";
 
 function Footer() {
+  const year = new Date().getFullYear();
+
   return (
     <footer className="bg-gradient-to-r from-gray-100 via-[#bce1ff] to-gray-100">
       <div className="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
@@ -157,7 +159,7 @@ function Footer() {
             </div>
           </div>
         </div>
-        <p className="mt-8 text-xs text-gray-800">© 2022 Comany Name</p>
+        <p className="mt-8 text-xs text-gray-800">© {year} Comany Name</p>
       </div>
     </footer>
   );

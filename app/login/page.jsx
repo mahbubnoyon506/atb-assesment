@@ -2,14 +2,14 @@
 
 import Link from "next/link";
 import React, { useState } from "react";
+import { signIn } from "next-auth/react";
+import { useRouter } from "next/navigation";
 
 import { useForm } from "react-hook-form";
 
 import DefaultLayout from "@/components/DefaultLayout";
 import InputField from "@/components/forms/InputField";
 import Button from "@/components/shared/Button";
-import { signIn } from "next-auth/react";
-import { useRouter } from "next/navigation";
 
 function Login() {
   const router = useRouter();
