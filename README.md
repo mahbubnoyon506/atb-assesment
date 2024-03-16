@@ -28,9 +28,9 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Features
 
--Authentication system
+- Authentication system
 
--Dashboard
+- Dashboard
 
 - Private route
 
@@ -40,6 +40,8 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 Note: I'v used mongodb for database, so you have to connect with mongodb. You use your own connection string or you may use mine.
 
--.env access
-MONGODB_URI = mongodb+srv://next-auth:V62GYepFMKacRv6H@cluster0.41nnutc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+- .env access
+
+MONGODB_URI = "mongodb+srv://next-auth:V62GYepFMKacRv6H@cluster0.41nnutc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+
 NEXTAUTH_SECRET = yZyB24XDArHq8QEwp7bmyf1xBgu15HoZ
