@@ -60,11 +60,8 @@ function Header() {
               </Button>
             ) : (
               <>
-                <Link
-                  href="/login"
-                  className="text-gray-800 text-lg  hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg px-4 lg:px-5 py-2 lg:py-2.5 mr-2  focus:outline-none"
-                >
-                  Log in
+                <Link href="/login" className="text-gray-800 text-lg mr-2">
+                  <Button>Log in</Button>
                 </Link>
                 <div>
                   <Button variant="sky">Get started</Button>
