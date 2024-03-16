@@ -1,23 +1,45 @@
 "use client";
 
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 
 import { useForm } from "react-hook-form";
 
 import DefaultLayout from "@/components/DefaultLayout";
 import InputField from "@/components/forms/InputField";
 import Button from "@/components/shared/Button";
+import { signIn } from "next-auth/react";
+import { useRouter } from "next/navigation";
 
 function Login() {
+  const router = useRouter();
+  const [error, setError] = useState();
+
   const {
     handleSubmit,
     register,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data) => {
-    console.log("onSubmit", data);
+  const onSubmit = async (data) => {
+    try {
+      const res = await signIn("credentials", {
+        email_or_phone: data.email_or_phone,
+        password: data.password,
+        redirect: false,
+      });
+
+      if (res.error) {
+        setError("Invalid Credentials");
+      }
+      console.log(res);
+      if (res.ok) {
+        router.replace("profile");
+      }
+    } catch (error) {
+      console.log(error);
+    }
   };
+
   return (
     <DefaultLayout>
       <div className="bg-slate-100 min-h-screen flex justify-center items-center">
@@ -38,6 +60,12 @@ function Login() {
               fieldName="password"
               register={register}
             />
+            {error ? (
+              <div className=" rounded-md outline outline-1 outline-red-600 text-red-600 px-3 py-1">
+                {error}
+              </div>
+            ) : null}
+
             <div className="">
               <Button type="submit" variant="sky">
                 Login

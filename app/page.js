@@ -1,3 +1,4 @@
+'use client'
 import Image from "next/image";
 
 import { FaPlayCircle } from "react-icons/fa";
@@ -8,6 +9,7 @@ import InputField from "@/components/forms/InputField";
 
 
 export default function Home() {
+
   return (
     <DefaultLayout >
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 py-12">

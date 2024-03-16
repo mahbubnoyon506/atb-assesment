@@ -1,10 +1,13 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
 import Button from "../shared/Button";
+import { signOut, useSession } from "next-auth/react";
 
 function Header() {
+  const { data: session } = useSession();
   const menuItems = [
     { name: "Home", href: "/" },
     { name: "Dashboard", href: "/dashboard" },
@@ -25,13 +28,19 @@ function Header() {
             />
           </Link>
           <div className="flex items-center lg:order-2">
-            <Link
-              href="/login"
-              className="text-gray-800  hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2  focus:outline-none"
-            >
-              Log in
-            </Link>
-            <Button variant="sky">Get started</Button>
+            {session ? (
+              <Button onClick={() => signOut()}>Logout</Button>
+            ) : (
+              <>
+                <Link
+                  href="/login"
+                  className="text-gray-800  hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2  focus:outline-none"
+                >
+                  Log in
+                </Link>
+                <Button variant="sky">Get started</Button>
+              </>
+            )}
           </div>
           <div
             className="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
