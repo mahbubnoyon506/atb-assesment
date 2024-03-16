@@ -36,3 +36,6 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - Default login access
   Email: baseit.tanveer@gmail.com
   Pass: 11223344
+
+Note: I'v used mongodb for database, so you have to connect with mongodb. You use your own connection string or mine.
+Mongodb access:
